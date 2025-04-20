@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'ChooseScreen.dart';
+
 class Dinner_v_Screen extends StatefulWidget {
   const Dinner_v_Screen({super.key});
 
@@ -56,7 +58,7 @@ class _Dinner_v_ScreenState extends State<Dinner_v_Screen> {
             children: [
               Icon(Icons.arrow_back,color: Colors.green.shade100,),
               ElevatedButton(onPressed: () {
-                Navigator.of(context).pushNamed('routevegetarian');
+                Navigator.of(context).pop();
               }, child: Text('Go Back',style: TextStyle(
                   color: Colors.green.shade50,
                   fontWeight: FontWeight.bold

@@ -64,7 +64,7 @@ class _Vegetarian_ScreenState extends State<Vegetarian_Screen> {
                 Padding(
                   padding: const EdgeInsets.only(right: 200),
                   child: ElevatedButton(onPressed: () {
-                    Navigator.of(context).pushNamed('routechoose');
+                    Navigator.of(context).pop();
                   }, child: Text('Go Back',style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white
